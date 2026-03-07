@@ -85,17 +85,17 @@ int main() {
     if (loc != 0) {
         printf("元素30的位置是：%d\n", loc);
     } else {
-        printf("未找到元素30\n");
+        printf("未找到元素30!\n");
     }
 
     // 5. 删除元素测试
     printf("\n===== 删除元素测试 =====\n");
     if (ListDelete(L, 3, deleteElem)) {
         printf("删除第3个位置的元素：%d 后：\n", deleteElem);
-        PrintList(L);
     } else {
-        printf("删除失败\n");
+        printf("删除失败!\n");
     }
+    PrintList(L);
 
     // 6. 边界测试：插入超出最大长度
     printf("\n===== 边界测试 =====\n");
@@ -108,5 +108,6 @@ int main() {
         printf("插入失败：顺序表已达最大长度！\n");
     }
 
+    printf("\n===== 所有测试完成 =====\n");
     return 0;
 }

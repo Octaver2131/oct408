@@ -18,7 +18,6 @@ void InitList(SeqList &L) {
     L.MaxSize = InitSize;
 }
 
-// 增加动态数组的长度
 void IncreaseSize(SeqList &L, int len) {
     int *p = L.data;
     L.data = (int *)malloc((L.MaxSize + len) * sizeof(int));
@@ -29,7 +28,6 @@ void IncreaseSize(SeqList &L, int len) {
     free(p);  // 释放原来的内存空间
 }
 
-// 顺序表插入操作
 bool ListInsert(SeqList &L, int i, int e) {
     if (i < 1 || i > L.length + 1)  // 判断i的范围是否有效
         return false;
@@ -42,7 +40,6 @@ bool ListInsert(SeqList &L, int i, int e) {
     return true;
 }
 
-// 顺序表删除操作
 bool ListDelete(SeqList &L, int i, int &e) {
     if (i < 1 || i > L.length)  // 判断i的范围是否有效
         return false;
@@ -63,7 +60,8 @@ int LocateElem(SeqList L, ElemType e) {
             return i + 1;
     return 0;
 }
-// 新增：打印顺序表内容的辅助函数（改用printf）
+
+// ========== 基本操作 ==========
 void PrintList(SeqList L) {
     printf("当前顺序表元素：");
     for (int i = 0; i < L.length; i++) {
@@ -75,8 +73,8 @@ void PrintList(SeqList L) {
 // ========== 测试函数 ==========
 int main() {
     SeqList L;
-    ElemType elem;
-    ElemType deleteElem;
+    ElemType e;
+    ElemType del;
     int loc;
 
     // 1. 初始化顺序表
@@ -95,8 +93,12 @@ int main() {
 
     // 3. 按位查找测试
     printf("\n===== 按位查找测试 =====\n");
-    elem = GetElem(L, 3);
-    printf("第3个位置的元素是：%d\n", elem);
+    e = GetElem(L, 3);
+    if (e != NULL) {
+        printf("第3个位置的元素是：%d\n", e);
+    } else {
+        printf("第3个位置的元素不存在！\n");
+    }
 
     // 4. 按值查找测试
     printf("\n===== 按值查找测试 =====\n");
@@ -104,17 +106,17 @@ int main() {
     if (loc != 0) {
         printf("元素30的位置是：%d\n", loc);
     } else {
-        printf("未找到元素30\n");
+        printf("未找到元素30!\n");
     }
 
     // 5. 删除元素测试
     printf("\n===== 删除元素测试 =====\n");
-    if (ListDelete(L, 3, deleteElem)) {
-        printf("删除第3个位置的元素：%d 后：\n", deleteElem);
-        PrintList(L);
+    if (ListDelete(L, 3, del)) {
+        printf("删除第3个位置的元素：%d 后：\n", del);
     } else {
-        printf("删除失败\n");
+        printf("删除失败!\n");
     }
+    PrintList(L);
 
     // 6. 扩容测试
     printf("\n===== 扩容测试 =====\n");
@@ -137,5 +139,6 @@ int main() {
     free(L.data);
     L.data = NULL;
 
+    printf("\n===== 所有测试完成 =====\n");
     return 0;
 }
