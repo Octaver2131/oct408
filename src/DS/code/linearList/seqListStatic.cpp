@@ -12,6 +12,7 @@ void InitList(SeqList &L) {
     L.length = 0;
 }
 
+// 插入
 bool ListInsert(SeqList &L, int i, int e) {
     if (i < 1 || i > L.length + 1)
         return false;
@@ -24,6 +25,7 @@ bool ListInsert(SeqList &L, int i, int e) {
     return true;
 }
 
+// 删除
 bool ListDelete(SeqList &L, int i, int &e) {
     if (i < 1 || i > L.length)
         return false;
@@ -34,10 +36,12 @@ bool ListDelete(SeqList &L, int i, int &e) {
     return true;
 }
 
+// 按位查找
 ElemType GetElem(SeqList L, int i) {
     return L.data[i - 1];
 }
 
+// 按值查找
 int LocateElem(SeqList L, ElemType e) {
     for (int i = 0; i < L.length; i++)
         if (L.data[i] == e)
@@ -57,13 +61,13 @@ void PrintList(SeqList L) {
 // ========== 测试函数 ==========
 int main() {
     SeqList L;
-    ElemType elem;
-    ElemType deleteElem;
+    ElemType e;
+    ElemType del;
     int loc;
 
     // 1. 初始化顺序表
-    InitList(L);
     printf("\n===== 初始化顺序表 =====\n");
+    InitList(L);
     PrintList(L);
 
     // 2. 插入元素测试
@@ -76,8 +80,8 @@ int main() {
 
     // 3. 按位查找测试
     printf("\n===== 按位查找测试 =====\n");
-    elem = GetElem(L, 3);
-    printf("第3个位置的元素是：%d\n", elem);
+    e = GetElem(L, 3);
+    printf("第3个位置的元素是：%d\n", e);
 
     // 4. 按值查找测试
     printf("\n===== 按值查找测试 =====\n");
@@ -90,8 +94,8 @@ int main() {
 
     // 5. 删除元素测试
     printf("\n===== 删除元素测试 =====\n");
-    if (ListDelete(L, 3, deleteElem)) {
-        printf("删除第3个位置的元素：%d 后：\n", deleteElem);
+    if (ListDelete(L, 3, del)) {
+        printf("删除第3个位置的元素：%d 后：\n", del);
     } else {
         printf("删除失败!\n");
     }

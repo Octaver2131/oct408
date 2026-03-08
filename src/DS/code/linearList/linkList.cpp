@@ -198,8 +198,13 @@ int main() {
     LNode* node;
 
     // 1. 初始化单链表
-    InitList(L);
     printf("\n===== 初始化顺序表 =====\n");
+    InitList(L);
+    if (InitList(L)) {
+        printf("单链表初始化成功！\n");
+    } else {
+        printf("单链表初始化失败！\n");
+    }
     PrintList(L);
 
     // 2. 插入元素测试

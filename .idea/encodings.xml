@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/DS/code/linearList/DLinkList.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/DS/code/linearList/linkList.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/DS/code/linearList/linkListHeadless.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/DS/code/linearList/seqListDynamic.cpp" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/DS/code/linearList/seqListDynamic.cpp" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/DS/code/linearList/seqListStatic.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/DS/code/linearList/seqListStatic.cpp" charset="GBK" />
   </component>
 </project>
