@@ -16,5 +16,4 @@ add_executable(LinkList_Circular src/DS/code/linearList/LinkList_Circular.cpp)
 
 add_executable(DLinkList_Circular src/DS/code/linearList/DLinkList_Circular.cpp)
 
-add_executable(DLinkList_Circular src/DS/code/stack/SqStack.cpp)
 
