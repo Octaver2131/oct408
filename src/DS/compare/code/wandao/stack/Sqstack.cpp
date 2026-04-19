@@ -1,5 +1,6 @@
-#define MaxSize 50              //定义栈中元素的最大个数
-typedef int ElemType;           // 定义栈元素的类型
+#include <cstdlib>
+#define MaxSize 50
+typedef int ElemType;
 
 typedef struct {
     ElemType data[MaxSize];     //存放栈中元素
