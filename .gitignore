@@ -1,0 +1,8 @@
+### claude
+.claude/
+
+### IDE
+.idea/
+
+### cmake build
+cmake-build-debug/
