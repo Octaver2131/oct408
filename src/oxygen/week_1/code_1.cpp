@@ -21,15 +21,14 @@ public:
 };
 
 // octaver_code
-using ll = long long;
-
 class Solution {
 public:
+    using ll = long long;
+
     bool isPalindrome(int x) {
         if (x < 0) return false;
         else if (x == 0) return true;
-        else
-        {
+        else {
             ll res = 0;
             int t = x;
             while (x) {
