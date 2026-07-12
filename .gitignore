@@ -1,6 +1,9 @@
 ### temp
 .temp/
 
+### exe
+*.exe
+
 ### claude
 .claude/
 
