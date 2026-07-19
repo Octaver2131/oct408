@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 队列的顺序存储 - 循环队列
@@ -43,3 +41,5 @@ bool DeQueue(SqQueue &Q, ElemType &x) {
     Q.front = (Q.front + 1) % MaxSize;
     return true;
 }
+
+#endif

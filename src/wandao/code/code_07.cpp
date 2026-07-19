@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
-
+#if 0
 /*
  * 栈的顺序存储
  */
@@ -49,3 +46,5 @@ bool GetTop(SqStack S, ElemType &x) {
     x = S.data[S.top];
     return true;
 }
+
+#endif

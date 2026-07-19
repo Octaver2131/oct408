@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 静态链表
@@ -12,3 +10,5 @@ typedef struct {
     ElemType data;
     int next;
 } SLinkList[MaxSize];
+
+#endif

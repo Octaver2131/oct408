@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 双链表
@@ -21,3 +19,5 @@ typedef struct DNode {
 // p->next=q->next;
 // q->next->prior=p;
 // free(q);
+
+#endif

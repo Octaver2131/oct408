@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 顺序表 - 静态分配
@@ -26,3 +24,4 @@ void InitList(SeqList &L){
     L.MaxSize = InitSize;
 }
 
+#endif

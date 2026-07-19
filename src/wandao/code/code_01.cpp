@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 顺序表 - 静态分配
@@ -50,3 +48,5 @@ int LocateElem(SqList L, ElemType e) {
             return i+1;
     return 0;
 }
+
+#endif

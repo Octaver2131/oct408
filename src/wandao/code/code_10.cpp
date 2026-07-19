@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 队列的链式存储
@@ -50,3 +48,5 @@ bool DeQueue(LinkQueue &Q, ElemType &x) {
     free(p);
     return true;
 }
+
+#endif

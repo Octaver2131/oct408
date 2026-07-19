@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
-
+#if 0
 /*
  * 串的定长顺序存储
  */
@@ -68,3 +65,5 @@ void get_nextval(SString T, int nextval[]) {
             j = nextval[j];
     }
 }
+
+#endif

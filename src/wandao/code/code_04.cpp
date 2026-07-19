@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 单链表 - 不带头结点
@@ -17,3 +15,5 @@ bool InitList(LinkList &L) {
     L->next = NULL;
     return true;
 }
+
+#endif

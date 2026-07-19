@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef int ElemType;
+#if 0
 
 /*
  * 单链表 - 带头结点
@@ -43,7 +41,7 @@ LNode *GetElem(LinkList L, int i) {
 // 按值查找表结点
 LNode *LocateElem(LinkList L, ElemType e) {
     LNode *p = L->next;
-    while(p != NULL && p->data != e)
+    while (p != NULL && p->data != e)
         p = p->next;
     return p;
 }
@@ -127,3 +125,5 @@ LinkList List_TailInsert (LinkList &L) {
     r->next = NULL;
     return L;
 }
+
+#endif
