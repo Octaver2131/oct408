@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/find-mode-in-binary-search-tree/description/
+// LeetCode: https://leetcode.cn/problems/find-mode-in-binary-search-tree/
 
 // oxygen_code
 class Solution {

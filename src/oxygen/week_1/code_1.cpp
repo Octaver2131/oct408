@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/palindrome-number/description/
+// LeetCode: https://leetcode.cn/problems/palindrome-number/
 
 // oxygen_code
 class Solution {

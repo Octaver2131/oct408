@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/reverse-linked-list/description/
+// LeetCode: https://leetcode.cn/problems/reverse-linked-list/
 
 // oxygen_code
 class Solution {

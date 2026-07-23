@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/description/
+// LeetCode: https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/
 
 // oxygen_code
 class Solution {

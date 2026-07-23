@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/single-number/description/
+// LeetCode: https://leetcode.cn/problems/single-number/
 
 // oxygen_code
 class Solution {

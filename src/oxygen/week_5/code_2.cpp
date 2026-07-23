@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/invert-binary-tree/description/
+// LeetCode: https://leetcode.cn/problems/invert-binary-tree/
 
 // oxygen_code
 class Solution {

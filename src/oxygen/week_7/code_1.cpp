@@ -1,7 +1,6 @@
 // LeetCode: https://leetcode.cn/problems/intersection-of-two-linked-lists/
 
 // oxygen_code
-
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
@@ -42,6 +41,7 @@ public:
         return q;
     }
 };
+
 // octaver_code
 class Solution {
 public:

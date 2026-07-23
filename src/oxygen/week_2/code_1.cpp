@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/valid-parentheses/description/
+// LeetCode: https://leetcode.cn/problems/valid-parentheses/
 
 // oxygen_code
 class Solution {

@@ -1,7 +1,6 @@
 // LeetCode: https://leetcode.cn/problems/minimum-depth-of-binary-tree/
 
 // oxygen_code
-
 class Solution {
 public:
     int minDepth(TreeNode* root) {

@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/description/
+// LeetCode: https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/
 
 // oxygen_code
 class Solution {

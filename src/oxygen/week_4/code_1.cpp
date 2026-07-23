@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/binary-search/description/
+// LeetCode: https://leetcode.cn/problems/binary-search/
 
 // oxygen_code
 class Solution {

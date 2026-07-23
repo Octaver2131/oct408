@@ -1,4 +1,4 @@
-// LeetCode: https://leetcode.cn/problems/linked-list-cycle/description/
+// LeetCode: https://leetcode.cn/problems/linked-list-cycle/
 
 // oxygen_code
 class Solution {
