@@ -9,7 +9,7 @@ typedef struct {
     struct process *L;
 } semaphore;
 
-void wait(semaphore S) {     // 相当于申请资源 - P 操作
+void wait(semaphore S) {       // 相当于申请资源 - P 操作
     S.value--;
     if (S.value < 0) {
         add this process to S.L;
@@ -17,7 +17,7 @@ void wait(semaphore S) {     // 相当于申请资源 - P 操作
     }
 }
 
-void signal(semaphore S) {   // 相当于释放资源 - V 操作
+void signal(semaphore S) {     // 相当于释放资源 - V 操作
     S.value++;
     if (S.value <= 0) {
         remove a process P from S.L;
